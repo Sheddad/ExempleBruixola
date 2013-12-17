@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skf.bruixola.Bruixola"
+    android:background="@drawable/bkg_ubyca" >
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/rlBruixola"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pasti_ubyca" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imBruixolaPunter"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/im_compass"
+            android:contentDescription="im Bruixola" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bx  μT"
+            android:id="@+id/txtBx"
+            android:layout_below="@+id/imBruixolaPunter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/red_cotxe" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By μT"
+            android:id="@+id/txtBy"
+            android:layout_below="@+id/imBruixolaPunter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:textColor="@color/red_cotxe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bz μT"
+            android:id="@+id/txtBz"
+            android:layout_below="@+id/imBruixolaPunter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/red_cotxe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="B"
+            android:id="@+id/txtB"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red_cotxe" />
+    </RelativeLayout>
+
+    <!--
+    <ImageButton
+        android:id="@+id/ibCompass"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@layout/bt_compass"
+        android:contentDescription="Bt Compass"
+        android:layout_marginBottom="18dp"
+        android:onClick="onClickCompass"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" /> -->
+
+</RelativeLayout>
